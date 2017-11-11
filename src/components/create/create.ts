@@ -30,7 +30,6 @@ export class CreateComponent extends Vue {
     constructor(options?: ComponentOptions<Vue>) {
         super(options);
 
-        console.log(templates);
         this.templates = templates;
     }
 

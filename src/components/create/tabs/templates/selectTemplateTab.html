@@ -21,10 +21,13 @@
 
                                                 <b>Fields:</b>
                                                 <div class="text-xs">
-                                                    <v-chip v-for="block in template.blocks" :key="block.id" >
-                                                        <v-avatar class="orange"><v-icon>{{block.icon}}</v-icon></v-avatar>
-                                                        {{block.title}}
-                                                    </v-chip>
+                                                    <v-tooltip  v-for="block in template.blocks" :key="block.id" top >
+                                                        <v-chip slot="activator">
+                                                            <v-avatar class="teal"><v-icon>{{block.icon}}</v-icon></v-avatar>
+                                                            {{block.title}}
+                                                        </v-chip>
+                                                        <span>{{block.description}}</span>
+                                                    </v-tooltip>
                                                 </div>
                                             </div>
                                         </v-card-title>
