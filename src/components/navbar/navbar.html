@@ -1,0 +1,49 @@
+<v-navigation-drawer
+        persistent
+
+        light
+        enable-resize-watcher
+        absolute
+>
+    <v-list dense>
+        <v-list-tile v-for="link in links" v-bind:class="{'active' : $route.path == link.path}" :key="link.path" flat @click="">
+            <v-list-tile-action>
+                <v-icon>{{link.icon}}</v-icon>
+            </v-list-tile-action>
+            <v-list-tile-content>
+                <v-list-tile-title>
+                    <router-link v-bind:to="link.path">{{link.name}}</router-link>
+                </v-list-tile-title>
+            </v-list-tile-content>
+        </v-list-tile>
+
+        <v-divider dark
+                class="my-4"
+        ></v-divider>
+
+        <template v-if="shouldRenderSteps">
+        <v-flex xs6>
+            <v-subheader >
+                Your progress
+            </v-subheader>
+        </v-flex>
+
+        <v-list-tile v-for="step in steps" v-bind:class="{'active' : $route.path == step.path}" :key="step.path" flat @click="">
+            <v-list-tile-action>
+                <v-icon>{{step.icon}}</v-icon>
+            </v-list-tile-action>
+            <v-list-tile-content>
+                <v-list-tile-title>
+                    <router-link v-bind:to="step.path">{{step.name}}</router-link>
+                </v-list-tile-title>
+            </v-list-tile-content>
+        </v-list-tile>
+
+
+        <v-divider dark
+                   class="my-4"
+        ></v-divider>
+        </template>
+
+    </v-list>
+</v-navigation-drawer>

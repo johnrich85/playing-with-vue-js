@@ -1,0 +1,39 @@
+$primary : #369de2;
+
+#main-content-wrap {
+  margin: 20px auto;
+}
+
+.home {
+  margin: 0 auto;
+  text-align: center;
+
+  h1 {
+    margin-top:58px;
+    color: #fff;
+    font-size:58px;
+  }
+
+  p {
+    width:45%;
+    margin:0 auto;
+    color: #a1c8e6;
+    font-family: 'Quicksand';
+  }
+
+  .btn {
+    margin-top:20px;
+  }
+}
+.application--light {
+  background: linear-gradient(175deg, rgb(0, 120, 215) 50%, #111 50%);
+}
+.card {
+  .active {
+    border:5px solid $primary;
+  }
+}
+.application--light .chip {
+  background: #efefef;
+  color: rgba(0,0,0,.87);
+}

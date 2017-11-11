@@ -1,0 +1,32 @@
+<div>
+    <v-tabs dark centered v-model="active">
+        <v-tabs-bar class="blue">
+            <v-tabs-item
+                    v-for="tab in tabs"
+                    :key="tab.id"
+                    :href="'#' + tab.id"
+                    ripple
+            >
+                {{tab.name}}
+            </v-tabs-item>
+            <v-tabs-slider class="yellow"></v-tabs-slider>
+        </v-tabs-bar>
+        <v-tabs-items>
+            <v-select-tab :templates="templates" v-on:update="handleTabUpdate">
+
+            </v-select-tab>
+
+            <v-subject-tab v-on:update="handleTabUpdate">
+
+            </v-subject-tab>
+
+            <v-populate-tab v-on:update="handleTabUpdate">
+
+            </v-populate-tab>
+        </v-tabs-items>
+    </v-tabs>
+
+    <div v-if="!is_last" class="text-xs-center mt-3">
+        <v-btn @click.native="next" class="primary" :disabled="canProgress === false">Next Step</v-btn>
+    </div>
+</div>

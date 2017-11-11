@@ -1,0 +1,55 @@
+<v-tabs-content :id="'tab1'">
+    <v-card flat>
+        <v-card-text>
+            <v-layout column>
+                <v-flex xs12 sm12>
+                    <v-container fluid grid-list-md class="grey lighten-4">
+                        <v-layout row wrap>
+                            <v-flex xs3>
+                                <v-card v-for="template in templates"
+                                        :key="template.id"
+                                        v-bind:class="{ active : isActive(template.id) }">
+                                    <div @click="select(template.id)" >
+                                        <v-card-media src="/assets/img/layout.jpg"
+                                                      height="300px">
+                                        </v-card-media>
+
+                                        <v-card-title>
+                                            <div>
+                                                <h6>{{template.title}}</h6>
+                                                <p>{{template.description}}</p>
+
+                                                <b>Fields:</b>
+                                                <div class="text-xs">
+                                                    <v-chip v-for="block in template.blocks" :key="block.id" >
+                                                        <v-avatar class="orange"><v-icon>{{block.icon}}</v-icon></v-avatar>
+                                                        {{block.title}}
+                                                    </v-chip>
+                                                </div>
+                                            </div>
+                                        </v-card-title>
+
+                                        <v-card-actions class="white">
+                                            <v-spacer></v-spacer>
+                                            <v-btn icon>
+                                                <v-icon>favorite</v-icon>
+                                            </v-btn>
+                                            <v-btn icon>
+                                                <v-icon>bookmark</v-icon>
+                                            </v-btn>
+                                            <v-btn icon>
+                                                <v-icon>share</v-icon>
+                                            </v-btn>
+                                        </v-card-actions>
+                                    </div>
+                                </v-card>
+                            </v-flex>
+                        </v-layout>
+                    </v-container>
+                </v-flex>
+            </v-layout>
+
+
+        </v-card-text>
+    </v-card>
+</v-tabs-content>

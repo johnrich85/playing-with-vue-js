@@ -1,0 +1,25 @@
+<v-tabs-content :id="'tab2'">
+    <v-card flat>
+        <v-card-text>
+            <v-layout column>
+                <v-flex xs12 sm12>
+                    <v-container fluid grid-list-md class="grey lighten-4">
+                        <v-layout row wrap>
+                            <v-flex xs12 sm2>
+                                <v-subheader v-text="'Autocomplete'"></v-subheader>
+                            </v-flex>
+                            <v-flex xs12 sm4>
+                                <v-select
+                                        v-bind:items="subjects"
+                                        label="Select"
+                                        v-on:input="select"
+                                        autocomplete
+                                ></v-select>
+                            </v-flex>
+                        </v-layout>
+                    </v-container>
+                </v-flex>
+            </v-layout>
+        </v-card-text>
+    </v-card>
+</v-tabs-content>
