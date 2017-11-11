@@ -20,14 +20,19 @@ export class SelectTemplateTab extends Vue {
 
     select(id) {
         let isActive =  this.selected === id;
+        let isValid = false;
 
         if (isActive) {
             this.selected = 0;
-            this.$emit('update', {'is_valid' : false});
         } else {
             this.selected = id;
-            this.$emit('update', {'is_valid' : true});
+            isValid = true;
         }
+
+        this.$emit('update', {
+            'is_valid' : isValid,
+            'selection' : this.selected
+        });
     }
 
 

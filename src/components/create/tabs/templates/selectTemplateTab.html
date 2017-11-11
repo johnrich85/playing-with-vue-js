@@ -5,6 +5,12 @@
                 <v-flex xs12 sm12>
                     <v-container fluid grid-list-md class="grey lighten-4">
                         <v-layout row wrap>
+                            <v-flex xs12>
+                                <div class="subheader-wrap" >
+                                    <h4>Select a template</h4>
+                                    <p>Choose one of the pre-defined templates below or create your own.</p>
+                                </div>
+                            </v-flex>
                             <v-flex xs3>
                                 <v-card v-for="template in templates"
                                         :key="template.id"

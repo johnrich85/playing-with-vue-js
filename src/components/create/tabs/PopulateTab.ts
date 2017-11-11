@@ -9,10 +9,9 @@ import {default as SavedTemplate} from '../../../models/SavedTemplate';
 
 export class PopulateTab extends Vue {
 
+    @Prop() protected template: SavedTemplate;
 
     constructor(options?: ComponentOptions<Vue>) {
         super(options);
     }
-
-
 }

@@ -26,11 +26,13 @@ export class CreateComponent extends Vue {
     protected is_last: boolean = false;
     protected templates: SavedTemplate[];
     protected canProgress: boolean = false;
+    protected selectedTemplate: SavedTemplate;
 
     constructor(options?: ComponentOptions<Vue>) {
         super(options);
 
         this.templates = templates;
+        this.selectedTemplate = null;
     }
 
     beforeMount() {
@@ -50,6 +52,10 @@ export class CreateComponent extends Vue {
             this.canProgress = true;
         } else {
             this.canProgress = false;
+        }
+
+        if (params.selection) {
+            this.selectedTemplate = this.templates.find(t => t.id === params.selection);
         }
     }
 
