@@ -27,7 +27,7 @@
 
                                                 <b>Fields:</b>
                                                 <div class="text-xs">
-                                                    <v-tooltip  v-for="block in template.blocks" :key="block.id" top >
+                                                    <v-tooltip  v-for="block in template.getBlocks()" :key="block.id" top >
                                                         <v-chip slot="activator">
                                                             <v-avatar class="teal"><v-icon>{{block.icon}}</v-icon></v-avatar>
                                                             {{block.title}}

@@ -38,11 +38,26 @@ body.icon = 'description';
 body.description = 'Text block pulled from the server. Contains multiple sub-fields';
 body.type = BlockTypes.RemoteText;
 
+let row1 = Array<Block>();
+let row2 = Array<Block>();
+let row3 = Array<Block>();
+let row4 = Array<Block>();
+
+row1.push(title);
+row2.push(intro);
+row3.push(stats, keyinfo);
+row4.push(body);
+
 let sample = new SavedTemplate();
 sample.id = 1;
 sample.title = 'Title, intro & key statistics';
 sample.description = 'A popular choice. Presents useful information in such a way that it can be easily digested';
-sample.blocks.push(title, intro, stats, keyinfo, body);
+
+sample.addRows(4);
+sample.addBlocks(0, row1);
+sample.addBlocks(1, row2);
+sample.addBlocks(2, row3);
+sample.addBlocks(3, row4);
 
 templates.push(sample);
 
