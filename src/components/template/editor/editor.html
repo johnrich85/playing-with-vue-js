@@ -3,52 +3,10 @@
 
         <v-layout row v-for="row in template.rows">
             <v-flex v-bind="getBlockClass(row)" v-for="block in row" :key="block.id">
-                <div class="template-title element-container">
-                    <v-form v-model="valid">
-                        <v-text-field
-                                label="Title"
-                                v-model="name"
-                                :rules="nameRules"
-                                :counter="255"
-                                required
-                        ></v-text-field>
-                    </v-form>
-                </div>
+                <v-block-renderer :block="block"></v-block-renderer>
             </v-flex>
         </v-layout>
 
-
-        <!--<v-layout row>-->
-            <!--<v-flex xs6>-->
-                <!--<div class="template-stats element-container">-->
-                    <!--<h4>Stats</h4>-->
-                    <!--<v-select-->
-                            <!--:items="stats"-->
-                            <!--label="Search/Select stats"-->
-                            <!--autocomplete-->
-                    <!--&gt;</v-select>-->
-                <!--</div>-->
-            <!--</v-flex>-->
-
-            <!--<v-flex xs6>-->
-                <!--<div class="template-keyinfo element-container">-->
-                    <!--<h4>Key info</h4>-->
-                    <!--<v-select-->
-                            <!--:items="stats"-->
-                            <!--label="Search/Select keyinfo"-->
-                            <!--autocomplete-->
-                    <!--&gt;</v-select>-->
-                <!--</div>-->
-            <!--</v-flex>-->
-        <!--</v-layout>-->
-
-        <!--<v-layout row>-->
-            <!--<v-flex xs12>-->
-                <!--<div class="template-body element-container">-->
-                    <!--<h1>Body</h1>-->
-                <!--</div>-->
-            <!--</v-flex>-->
-        <!--</v-layout>-->
     </v-flex>
 
     <v-flex id="edit-template-preview" xs6>

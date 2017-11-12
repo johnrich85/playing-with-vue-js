@@ -3,9 +3,13 @@ import Component from 'vue-class-component';
 
 import SavedTemplate from '../../../models/SavedTemplate';
 import {Prop} from 'vue-property-decorator';
+import {BlockRendererComponent} from '../block-renderer/block-renderer';
 
 @Component({
-    template: require('./editor.html')
+    template: require('./editor.html'),
+    components: {
+        'v-block-renderer': BlockRendererComponent,
+    }
 })
 
 export class TemplateEditorComponent extends Vue {
