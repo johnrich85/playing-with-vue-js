@@ -1,6 +1,6 @@
-# vueshit
+# Messing around with Typescript and Vue
 
-> shit in vue
+> Tings
 
 ## Build Setup
 
