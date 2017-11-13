@@ -1,5 +1,10 @@
 <v-form v-model="valid">
     <div class="template-body element-container">
-        <h1>Body/intro</h1>
+        <h4>Intro/Body</h4>
+        <v-select
+                :items="stats"
+                label="Search/Select intro/body"
+                autocomplete
+        ></v-select>
     </div>
 </v-form>
