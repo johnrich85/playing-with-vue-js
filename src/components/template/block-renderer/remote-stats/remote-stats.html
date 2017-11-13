@@ -1,7 +1,9 @@
 <v-form>
     <h4>Stats</h4>
     <v-select
-            :items="stats"
+            item-value="id"
+            item-text="title"
+            :items="options"
             label="Search/Select stats"
             autocomplete
     ></v-select>

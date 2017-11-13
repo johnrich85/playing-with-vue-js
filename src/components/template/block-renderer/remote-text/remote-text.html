@@ -2,7 +2,9 @@
     <div class="template-body element-container">
         <h4>Intro/Body</h4>
         <v-select
-                :items="stats"
+                item-value="id"
+                item-text="title"
+                :items="options"
                 label="Search/Select intro/body"
                 autocomplete
         ></v-select>

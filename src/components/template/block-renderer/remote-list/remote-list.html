@@ -1,7 +1,10 @@
 <v-form v-model="valid">
     <h4>Key info</h4>
     <v-select
-            :items="stats"
+            required
+            item-value="id"
+            item-text="title"
+            :items="options"
             label="Search/Select keyinfo"
             autocomplete
     ></v-select>
