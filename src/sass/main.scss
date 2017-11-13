@@ -19,7 +19,7 @@ $primary : #369de2;
   p {
     width:45%;
     margin:0 auto;
-    color: #a1c8e6;
+    color: #37ccbe;
     font-family: 'Quicksand';
   }
 
@@ -31,7 +31,7 @@ $primary : #369de2;
   font-family: 'Quicksand';
 }
 .application--light {
-  background: linear-gradient(175deg, rgb(0, 120, 215) 50%, #111 50%);
+  background: linear-gradient(175deg, #009688 50%, white 50%);
 }
 .card {
   .active {
@@ -44,6 +44,21 @@ $primary : #369de2;
 }
 
 .edit-template .element-container {
-  background: grey;
-  border:1px solid black;
+
+}
+
+.edit-template-edit {
+  background: rgba(255,255,255,0.9);
+  border-radius: 5px;
+  border: 1px solid #888888;
+  padding:40px;
+
+  .row {
+    overflow: hidden;
+    padding: 0 0 1em;
+    border-bottom: 1px solid #ddd;
+    margin: 0 0 1em;
+    margin-left: 40px;
+    width: 100%;
+  }
 }

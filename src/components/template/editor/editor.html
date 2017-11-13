@@ -1,11 +1,14 @@
 <v-layout class="edit-template" v-if="template">
     <v-flex id="edit-template-left" xs6>
 
-        <v-layout row v-for="row in template.rows">
-            <v-flex v-bind="getBlockClass(row)" v-for="block in row" :key="block.id">
-                <v-block-renderer :block="block"></v-block-renderer>
-            </v-flex>
-        </v-layout>
+        <div class="edit-template-edit">
+            <v-layout row v-for="row in template.rows">
+                <v-flex v-bind="getBlockClass(row)" v-for="block in row" :key="block.id">
+                    <v-block-renderer :block="block"></v-block-renderer>
+                </v-flex>
+            </v-layout>
+        </div>
+
 
     </v-flex>
 
