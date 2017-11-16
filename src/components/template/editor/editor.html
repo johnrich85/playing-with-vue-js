@@ -2,17 +2,42 @@
     <v-flex id="edit-template-left" xs6>
 
         <div class="edit-template-edit">
-            <v-layout row v-for="row in template.rows">
-                <v-flex v-bind="getBlockClass(row)" v-for="block in row" :key="block.id">
-                    <v-block-renderer :block="block"></v-block-renderer>
-                </v-flex>
-            </v-layout>
+            <v-form>
+                <v-layout row v-for="row in template.rows">
+                    <v-flex v-bind="getBlockClass(row)" v-for="block in row" :key="block.id">
+                        <v-block-renderer :block="block"></v-block-renderer>
+                    </v-flex>
+                </v-layout>
+            </v-form>
+
         </div>
 
 
     </v-flex>
 
-    <v-flex id="edit-template-preview" xs6>
-        preview
+    <v-flex id="edit-template-preview" class="default-theme" xs6>
+        <div class="template-header">
+            <h1>Web and technology sector</h1>
+        </div>
+
+        <v-layout row>
+            <v-flex xs8>
+                <div>
+                    <p>
+                        Information technology is the application of computers to store, study, retrieve, transmit, and manipulate data, or information, often
+                        in the context of a business or other enterprise. IT is considered a subset of information and communications technology (ICT).
+                        In 2012, Zuppo proposed an ICT hierarchy where each hierarchy level "contain[s] some degree of commonality in that they are related.
+                    </p>
+                </div>
+            </v-flex>
+            <v-flex xs4>
+                <h5>Sector Growth 2016</h5>
+                <v-progress-circular size="100" width="15" rotate="180" value="5" color="white">
+                    5%
+                </v-progress-circular>
+            </v-flex>
+
+        </v-layout>
+
     </v-flex>
 </v-layout>
