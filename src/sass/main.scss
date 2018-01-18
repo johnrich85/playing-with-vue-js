@@ -61,24 +61,31 @@ $primary : #369de2;
     margin-left: 40px;
     width: 100%;
   }
+
 }
 
 #edit-template-preview.default-theme {
-  background:#2694cf;
-  color: #fff;
+  $text : #D4C76A;
+  $emphasis : #FFF4AA;
+  $bg1: #241a25;
+  $bg2: #2D1657;
+
+  background:$bg2;
+  color: $text;
 
   .template-header {
     color: #fff;
-    background-color: #241a25;
-    background-image: linear-gradient(12deg, transparent 34%, transparent 39%), linear-gradient(-35deg, #2694cf 30%, transparent 30%);
+    background-color: $bg1;
+    background-image: linear-gradient(12deg, transparent 34%, transparent 39%), linear-gradient(-35deg, #2D1657 30%, transparent 30%);
     padding: 40px 0px 40px 0px;
   }
 
   p {
     padding: 32px;
     color: white;
-    line-height: 31px;
+    line-height: 27px;
     font-family: quicksand;
+    color: $text;
   }
 
   h1 {
@@ -86,5 +93,33 @@ $primary : #369de2;
     text-align: left;
     font-weight:bold;
     padding-left:28px;
+    color: $emphasis;
+  }
+
+  h5 {
+    color: $text;
+  }
+
+  ul {
+    color: $text;
+    li {
+      padding:5px;
+      b {
+        color:$emphasis;
+        font-size: 20px;
+      }
+    }
+  }
+
+  .stats-block {
+    text-align: center;
+    background: red;
+    background: #9AA637;
+    padding:40px;
+    color: $emphasis;
+    font-weight:bold;
+    font-family:'Roboto', sans-serif;
+    font-size:32px;
+    border-top: 12px solid $emphasis;
   }
 }
