@@ -1,7 +1,7 @@
 import Vue, {ComponentOptions} from 'vue';
 import Component from 'vue-class-component';
 import {Inject, Prop, Provide, Watch} from 'vue-property-decorator';
-import {default as SavedTemplate} from '../../../models/SavedTemplate';
+import {default as SavedTemplate} from '../../../../models/SavedTemplate';
 
 @Component({
     template: require('./templates/subjectTab.html')

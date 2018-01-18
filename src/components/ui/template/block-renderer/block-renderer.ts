@@ -1,9 +1,9 @@
 import Vue, {ComponentOptions} from 'vue';
 import Component from 'vue-class-component';
 
-import SavedTemplate from '../../../models/SavedTemplate';
+import SavedTemplate from '../../../../models/SavedTemplate';
 import {Prop} from 'vue-property-decorator';
-import Block, {BlockTypes} from "../../../models/Block";
+import Block, {BlockTypes} from "../../../../models/Block";
 import {StaticTextRendererComponent} from "./static-text/static-text-renderer";
 import {RemoteTextRendererComponent} from "./remote-text/remote-text-renderer";
 import {RemoteListRendererComponent} from "./remote-list/remote-list-renderer";

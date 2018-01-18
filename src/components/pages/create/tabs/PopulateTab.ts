@@ -1,8 +1,8 @@
 import Vue, {ComponentOptions} from 'vue';
 import Component from 'vue-class-component';
 import {Inject, Prop, Provide, Watch} from 'vue-property-decorator';
-import {default as SavedTemplate} from '../../../models/SavedTemplate';
-import {TemplateEditorComponent} from '../../template/editor/editor';
+import {default as SavedTemplate} from '../../../../models/SavedTemplate';
+import {TemplateEditorComponent} from '../../../ui/template/editor/editor';
 
 @Component({
     template: require('./templates/populateTab.html'),

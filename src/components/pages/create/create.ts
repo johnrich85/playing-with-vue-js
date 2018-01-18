@@ -1,14 +1,14 @@
 import Vue, {ComponentOptions} from 'vue';
 import Component from 'vue-class-component';
-import {Logger} from '../../util/log';
-import { Link } from '../navbar/link';
-import { Steps } from '../../util/steps';
-import SavedTemplate from '../../models/SavedTemplate';
+import {Logger} from '../../../util/log';
+import { Link } from '../../ui/navbar/link';
+import { Steps } from '../../../util/steps';
+import SavedTemplate from '../../../models/SavedTemplate';
 import { SelectTemplateTab } from './tabs/SelectTemplateTab';
 import { SubjectTab } from './tabs/SubjectTab';
 import { PopulateTab } from './tabs/PopulateTab';
 import {Inject, Prop, Provide, Watch} from 'vue-property-decorator';
-import templates from '../../data/Templates';
+import templates from '../../../data/Templates';
 
 @Component({
     template: require('./create.html'),

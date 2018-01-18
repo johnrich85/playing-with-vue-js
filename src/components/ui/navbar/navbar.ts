@@ -1,8 +1,8 @@
 import Vue from 'vue';
 import { Component, Watch } from 'vue-property-decorator';
-import { Logger } from '../../util/log';
+import { Logger } from '../../../util/log';
 import { Link } from './link';
-import { Routes, Steps } from '../../util/steps';
+import { Routes, Steps } from '../../../util/steps';
 
 @Component({
     template: require('./navbar.html')

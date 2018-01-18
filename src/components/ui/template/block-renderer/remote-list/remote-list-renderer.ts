@@ -1,8 +1,8 @@
 import Vue, {ComponentOptions} from 'vue';
 import Component from 'vue-class-component';
 import {Prop} from 'vue-property-decorator';
-import Block from '../../../../models/Block';
-import remoteKeyinfo from "../../../../data/RemoteKeyInfo";
+import Block from '../../../../../models/Block';
+import remoteKeyinfo from "../../../../../data/RemoteKeyInfo";
 
 @Component({
     template: require('./remote-list.html')

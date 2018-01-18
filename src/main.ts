@@ -3,10 +3,10 @@ import VueRouter from 'vue-router';
 
 import './sass/main.scss';
 
-import { HomeComponent } from './components/home';
-import { CreateComponent } from './components/create';
-import { ListComponent } from './components/list';
-import { NavbarComponent } from './components/navbar';
+import { HomeComponent } from './components/pages/home';
+import { CreateComponent } from './components/pages/create';
+import { ListComponent } from './components/ui/list';
+import { NavbarComponent } from './components/ui/navbar';
 import Vuetify from 'vuetify';
 
 // register the plugin

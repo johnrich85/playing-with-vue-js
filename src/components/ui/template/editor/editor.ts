@@ -1,7 +1,7 @@
 import Vue, {ComponentOptions} from 'vue';
 import Component from 'vue-class-component';
 
-import SavedTemplate from '../../../models/SavedTemplate';
+import SavedTemplate from '../../../../models/SavedTemplate';
 import {Prop} from 'vue-property-decorator';
 import {BlockRendererComponent} from '../block-renderer/block-renderer';
 import LineGraph from '../../charts/line';

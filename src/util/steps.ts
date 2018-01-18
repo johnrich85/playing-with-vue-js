@@ -1,4 +1,4 @@
-import { Link } from '../components/navbar/link';
+import { Link } from '../components/ui/navbar/link';
 
 export const Routes  = [
     new Link('1', 'Home', '/', 'home'),
