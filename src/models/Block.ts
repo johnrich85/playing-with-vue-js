@@ -4,6 +4,7 @@ export default class Block {
     public description: string;
     public type: BlockTypes;
     public icon: string;
+    public data: Object;
 }
 
 export enum BlockTypes {

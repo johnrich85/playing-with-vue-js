@@ -52,6 +52,7 @@ let sample = new SavedTemplate();
 sample.id = 1;
 sample.title = 'Title, intro & key statistics';
 sample.description = 'A popular choice. Presents useful information in such a way that it can be easily digested';
+sample.layout = 'template1';
 
 sample.addRows(4);
 sample.addBlocks(0, row1);

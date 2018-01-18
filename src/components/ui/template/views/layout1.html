@@ -1,0 +1,77 @@
+<v-flex id="edit-template-preview" class="default-theme" xs6>
+
+    <div class="template-header">
+        <v-view-renderer :block="template.rows[0][0]"></v-view-renderer>
+    </div>
+
+    <v-layout row>
+        <v-flex xs8>
+            <div>
+                <p>
+                    Information technology is the application of computers to store, study, retrieve, transmit, and
+                    manipulate data, or information, often
+                    in the context of a business or other enterprise. IT is considered a subset of information and
+                    communications technology (ICT).
+                    In 2012, Zuppo proposed an ICT hierarchy where each hierarchy level "contain[s] some degree of
+                    commonality in that they are related.
+                </p>
+            </div>
+        </v-flex>
+
+        <v-flex xs4>
+            <h5>Key info</h5>
+            <ul>
+                <li>Staff moral dropped by <b>18%</b> post brexit and is likey to trend downwards further.</li>
+                <li>Information technology is the application of computers to store</li>
+                <li>The sector is due to grow <b>50%</b> this quarter.</li>
+            </ul>
+        </v-flex>
+    </v-layout>
+
+
+    <v-layout row>
+        <v-flex xs3>
+            <div class="stats-block">
+                FILL ME
+            </div>
+        </v-flex>
+
+        <v-flex xs3>
+            <div class="stats-block">
+                FILL ME
+            </div>
+        </v-flex>
+
+        <v-flex xs3>
+            <div class="stats-block">
+                FILL ME
+            </div>
+        </v-flex>
+
+        <v-flex xs3>
+            <div class="stats-block">
+                FILL ME
+            </div>
+        </v-flex>
+
+    </v-layout>
+
+
+    <v-layout row>
+        <v-flex xs8>
+            <div>
+                <v-line-graph :chartData="tempData"></v-line-graph>
+            </div>
+        </v-flex>
+
+        <v-flex xs4>
+            <h5>Key info</h5>
+            <ul>
+                <li>Staff moral dropped by <b>18%</b> post brexit and is likey to trend downwards further.</li>
+                <li>Information technology is the application of computers to store</li>
+                <li>The sector is due to grow <b>50%</b> this quarter.</li>
+            </ul>
+        </v-flex>
+
+    </v-layout>
+</v-flex>

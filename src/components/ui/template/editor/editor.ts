@@ -3,33 +3,20 @@ import Component from 'vue-class-component';
 
 import SavedTemplate from '../../../../models/SavedTemplate';
 import {Prop} from 'vue-property-decorator';
-import {BlockRendererComponent} from '../block-renderer/block-renderer';
-import LineGraph from '../../charts/line';
+import {EditBlockRendererComponent} from '../block-renderer/edit-block-renderer';
+import {TemplateViewComponent} from "../views/template-view-component";
 
 @Component({
     template: require('./editor.html'),
     components: {
-        'v-block-renderer': BlockRendererComponent,
-        'v-line-graph': LineGraph
+        'v-edit-renderer': EditBlockRendererComponent,
+        'v-template-view': TemplateViewComponent
     }
 })
 
 export class TemplateEditorComponent extends Vue {
 
     @Prop() protected template: SavedTemplate;
-
-    protected tempData: Object = {
-        labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
-        datasets: [
-            {
-                label: 'Stats',
-                backgroundColor: '#632770',
-                pointBackgroundColor: '#481054',
-                steppedLine : false,
-                data: [40, 39, 10, 40, 39, 80, 40]
-            }
-        ]
-    };
 
     constructor(options?: ComponentOptions<Vue>) {
         super(options);
