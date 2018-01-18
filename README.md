@@ -5,7 +5,6 @@
 
 - Populate the template dynamically (from blocks)
 
-    - TemplateViewComponent > Need a better way to load layouts (require will crash the app if the template doesnt exist)
     - <v-view-renderer :block="template.rows[0][0]"></v-view-renderer> - Need a better/more expressive way to access these.
     - Need to finish up the rest of the view renderers
     - Need to start populating block data.

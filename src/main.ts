@@ -8,7 +8,7 @@ import { CreateComponent } from './components/pages/create';
 import { ListComponent } from './components/ui/list';
 import { NavbarComponent } from './components/ui/navbar';
 import Vuetify from 'vuetify';
-import {ErrorComponent} from "./components/pages/error/error";
+import {ErrorComponent} from './components/pages/error/error';
 
 // register the plugin
 Vue.use(VueRouter);

@@ -4,7 +4,7 @@ import Component from 'vue-class-component';
 import SavedTemplate from '../../../../models/SavedTemplate';
 import {Prop} from 'vue-property-decorator';
 import {EditBlockRendererComponent} from '../block-renderer/edit-block-renderer';
-import {TemplateViewComponent} from "../views/template-view-component";
+import {TemplateViewComponent} from '../views/template-view-component';
 
 @Component({
     template: require('./editor.html'),

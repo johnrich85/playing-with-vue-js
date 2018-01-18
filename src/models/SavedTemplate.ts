@@ -5,7 +5,7 @@ export default class SavedTemplate {
     public title: string;
     public description: string;
     public rows: Array<Array<Block>>;
-    public layout: String;
+    public layout: number;
 
     constructor() {
         this.rows = Array<Array<Block>>();
