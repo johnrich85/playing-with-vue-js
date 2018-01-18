@@ -1,6 +1,12 @@
 # Messing around with Typescript and Vue
 
-> Tings
+
+## To do
+
+- Populate the template dynamically (from blocks)
+- Get a database up and running
+
+
 
 ## Build Setup
 
